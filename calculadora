@@ -1,0 +1,20 @@
+2. Crie uma classe Calculadora com um método que recebe um número como parâmetro e retorna o dobro desse número.
+
+public class Calculadora {
+	
+	public int dobrarNumero(int numero) {
+        return numero * 2;
+	}
+}
+
+// Classe Principal
+
+public class CalculadoraPrincipal {
+
+	public static void main(String[] args) {
+		
+		Calculadora calculadora = new Calculadora();
+		int resultado = calculadora.dobrarNumero(5);
+		System.out.println(resultado);
+	}
+}
