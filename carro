@@ -1,0 +1,33 @@
+4. Crie uma classe Carro com atributos modelo, ano, cor e métodos para exibir a ficha técnica e calcular a idade do carro.
+
+public class Carro {
+	String modelo;
+	int ano;
+	String cor;
+	
+	void exibeFichaTecnica () {
+		System.out.println("O modelo do carro é: " + modelo);
+		System.out.println("A cor é: " + cor);
+		System.out.println("O ano é: " + ano);
+	}
+	
+    int calculaIdade() {
+        return 2024 - ano;
+    }
+}
+
+// Classe Principal
+
+public class CarroPrincipal {
+
+	public static void main(String[] args) {
+		Carro carro = new Carro();
+		carro.modelo = "Fiesta";
+		carro.ano = 2010;
+		carro.cor = "Prata";
+		
+		carro.exibeFichaTecnica();
+		
+		 System.out.println("Idade do carro: " + carro.calculaIdade() + " anos");
+	}
+}
