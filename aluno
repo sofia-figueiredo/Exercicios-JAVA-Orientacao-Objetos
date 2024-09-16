@@ -1,0 +1,24 @@
+5. Crie uma classe Aluno com atributos nome, idade, e um método para exibir informações. Crie uma instância da classe Aluno, atribua valores aos seus atributos e utilize o método para exibir as informações.
+
+public class Aluno {
+	String nome;
+	int idade;
+	
+	void exibeFichaTecnica () {
+		System.out.println("Nome: " + nome);
+		System.out.println("Idade: " + idade);
+	}
+}
+
+// Classe Principal
+
+public class AlunoPrincipal {
+
+	public static void main(String[] args) {
+		Aluno aluno = new Aluno();
+		aluno.nome = "Sofia";
+		aluno.idade = 20;
+		
+		aluno.exibeFichaTecnica();
+	}
+}
